@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:record" size="small"></lightning-icon>
+            Create Crick Record
+        </h3>
+        <div slot="footer">
+            <lightning-button label="Create Record" onclick={handleClick} variant="brand"></lightning-button>
+        </div>
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="text" label="Name" value={Name} onchange={handleNameChange}></lightning-input>
+            <lightning-input type="Phone" label="Number" value={Number} onchange={handleNumberChange}></lightning-input>
+        </p>
+    </lightning-card>
+    </template>
