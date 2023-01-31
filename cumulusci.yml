@@ -1,0 +1,31 @@
+minimum_cumulusci_version: '3.71.0'
+project:
+    name: Demo
+    package:
+        name: Demo
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Demo/tests
+            options:
+                outputdir: robot/Demo/results
+
+    robot_testdoc:
+        options:
+            path: robot/Demo/tests
+            output: robot/Demo/doc/Demo_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
+
+flows:
+   config_dev:
+        steps:
+            3:
+              task: load_dataset

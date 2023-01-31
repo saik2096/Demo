@@ -1,0 +1,5 @@
+Insert crick__c:
+  sf_object: crick__c
+  fields:
+  - Name
+  - Number__c
