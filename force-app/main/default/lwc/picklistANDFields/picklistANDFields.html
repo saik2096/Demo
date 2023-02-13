@@ -1,0 +1,20 @@
+<template>
+     <lightning-card>
+
+        <lightning-combobox name="progress" label="Application Name" value={value} placeholder="Select Progress" options={options} onchange={handleChange} ></lightning-combobox>
+        <lightning-combobox name="progress" label="Repository" value={value} placeholder="Select Repository" options={options} onchange={handleChange} ></lightning-combobox>
+        <lightning-combobox name="progress" label="imageId" value={value} placeholder="Select Image" options={options} onchange={handleChange} ></lightning-combobox>
+
+                <h3 slot="title">
+                    <lightning-icon icon-name="standard:record" size="small"></lightning-icon>
+                    Create DeploymentFreq Record
+                </h3>
+        
+                <div slot="footer">
+                    <lightning-button label="Create Record" onclick={handleClick} variant="brand"></lightning-button>
+                </div>
+                <p class="slds-p-horizontal_small">
+                    <lightning-input type="Text Area" label="Note" value={Note} onchange={handleNoteChange}></lightning-input>
+                </p>
+            </lightning-card>
+</template>
