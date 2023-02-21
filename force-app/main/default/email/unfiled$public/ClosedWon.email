@@ -1,0 +1,3 @@
+Good News!!. You woned the Opportunity you owned {!$Record.Name}.
+Opportunity Amount : – {!$Record.Amount}.
+Opportunity Account : – {!$Record.AccountId}.
